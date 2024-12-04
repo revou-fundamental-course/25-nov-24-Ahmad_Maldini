@@ -15,11 +15,21 @@ footer {
     text-align: center; /*rata tengah*/
 }
 
-/*input layout bb-umur-tb*/
+/*layout Form bb-umur-tb*/
 form {
-    background-color: lightgray; /*background abu muda*/
+    background-color: rgb(236, 236, 236); /*background abu muda*/
     padding: 10px; /*jarak antar tulisan dengan tabel*/
     border-radius: 8px; /*tingkat runcing ujung tabel*/
+}
+
+/*layout second form*/
+.second-form {
+    text-align: center;
+}
+
+/*layout third form*/
+.third-form {
+    text-align: center;
 }
 
 /*layout input bb-umur-tb*/
@@ -29,7 +39,7 @@ form {
     flex-wrap: wrap;
 }
 
-/*layput label input bb-umur-tb*/
+/*layout label input bb-umur-tb*/
 #label-form {
     display: flex;
         align-items: center;
@@ -45,3 +55,101 @@ input[type=number], select {
     border-radius: 4px;
     box-sizing: border-box;
   }
+
+/*styling tombol hitung bmi*/
+.buttonmain1 {
+    background-color: rgb(91, 170, 255);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/*styling tombol reset*/
+.buttonmain2 {
+    background-color: rgb(152, 181, 212);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/*styling tombol Download Hasil BMI*/
+.buttonmain3 {
+    background-color: rgb(91, 170, 255);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/*styling tombol Konsultasi Ahli Gizi*/
+.buttonmain4 {
+    background-color: rgb(91, 170, 255);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/*styling tombol Registrasi Online Ahli Gizi*/
+.buttonmain5 {
+    background-color: rgb(91, 170, 255);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/*styling tombol Konsultasi Dokter*/
+.buttonmain6 {
+    background-color: rgb(91, 170, 255);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/*styling tombol Registrasi Online Sekarang*/
+.buttonmain7 {
+    background-color: rgb(91, 170, 255);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}

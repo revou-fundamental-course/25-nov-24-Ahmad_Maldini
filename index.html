@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css\styles.css">
 </head>
 
-<body>
+<body style="font-family: Arial, Helvetica, sans-serif;">
     <main>
         <!-- Section Form Kalkulator BMI -->
         <section class="main-section">
@@ -24,48 +24,48 @@
             </article>
             
             <!-- Main Form -->
-            <form>
+            <form class="first-form">
                 <!-- Pilihan Gender -->
                 <p>
                     <b>Jenis Kelamin</b>
                     <br>
                     <input type="radio" id="pria" name="jenis-kelamin" value="Pria">
-                    <label for="pria">Pria</label>
+                    <label for="pria"><b>Pria</b></label>
 
                     <input type="radio" id="wanita" name="jenis-kelamin" value="Wanita">
-                    <label for="wanita">Wanita</label>
+                    <label for="wanita"><b>Wanita</b></label>
                 </p>
 
                 <!-- Input Data -->
                 <!-- Berat Badan -->
                 <div class="form-item">
                     <label id="label-form" for="berat-badan-input">
-                        Berat Badan (kg):
+                        <b>Berat Badan (kg)</b>
                     </label>
-                    <input type="number" id="berat-badan-input" />
+                    <input type="number" id="berat-badan-input" placeholder="Berat Badan (kg)"/>
                 </div>
 
                 <!-- Usia -->
                 <div class="form-item">
                     <label id="label-form" for="usia-input">
-                        Usia (tahun):
+                        <b>Usia (tahun)</b>
                     </label>
-                    <input type="number" id="usia-input" />
+                    <input type="number" id="usia-input" placeholder="Usia (tahun)"/>
                 </div>
                 
                 <!-- Tinggi Badan -->
                 <div class="form-item">
                     <label id="label-form" for="tinggi-badan-input">
-                        Tinggi Badan (cm):
+                        <b>Tinggi Badan (cm)</b>
                     </label>
-                    <input type="number" id="tinggi-badan-input" />
+                    <input type="number" id="tinggi-badan-input" placeholder="Tinggi Badan (cm)"/>
                 </div>
     
                 <!-- Tombol Eksekusi -->
                 <div>
                     <p>
-                        <button>Hitung BMI</button>
-                        <button>Reset</button>
+                        <button class="buttonmain1">Hitung BMI</button>
+                        <button class="buttonmain2">Reset</button>
                     </p>
                 </div>
             </form>
@@ -93,17 +93,19 @@
         <section class="main-section">
             <div>
                 <header>
-                    <h2>Hasil</h2>
+                    <h2 style="margin-bottom: 5px;">Hasil</h2>
                 </header>
 
                 <!-- Notifikasi Hasil -->
-                <p>Berat Badan Lebih</p>
+                <form class="second-form">
+                    <p>Berat Badan Lebih</p>
 
-                <div id="result-calculation">0</div>
+                    <div id="result-calculation">0</div>
 
-                <p id="info-result">Anda memiliki berat badan</p>
+                    <p id="info-result">Anda memiliki berat badan</p>
 
-                <button>Download Hasil BMI</button>
+                    <button class="buttonmain3">Download Hasil BMI</button>
+                </form>
             </div>
 
             <p>Hasil diantara 23 dan 25</p>
@@ -117,27 +119,26 @@
 
             <div>
                 <p>
-                    <button>Konsultasi Ahli Gizi Via Aplikasi</button>
-                    <button>Registrasi Online Ahli Gizi</button>
+                    <button class="buttonmain4">Konsultasi Ahli Gizi Via Aplikasi</button>
+                    <button class="buttonmain5">Registrasi Online Ahli Gizi</button>
                 </p>
             </div>
 
             <!-- Fourth Article -->
             <article>
                 <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.</p>
-                <p>Beberapa Penyakit yang Berasal dari Kegemukan</p>
-                <ul>
-                    <li>Diabetes</li>
-                    <li>Hipertensi</li>
-                    <li>Sakit Jantung</li>
-                    <li>Osteoarthritis</li>
-                </ul>
+                <form class="third-form">
+                    <p>Beberapa Penyakit yang Berasal dari Kegemukan</p>
+                    <dl>
+                        <dt>Diabetes</dt>
+                        <dt>Hipertensi</dt>
+                        <dt>Sakit Jantung</dt>
+                        <dt>Osteoarthritis</dt>
+                    </dl>
+                    <button class="buttonmain6">Konsultasi Dokter Via Aplikasi</button>
+                    <button class="buttonmain7">Registrasi Online Sekarang</button>
+                </form>
             </article>
-
-            <div>
-                <button>Konsultasi Dokter Via Aplikasi</button>
-                <button>Registrasi Online Sekarang</button>
-            </div>
         </section>
     </main>
 
