@@ -1,9 +1,24 @@
 main {
     display: flex
-;
-    justify-content: space-evenly;
+    ;
+        justify-content: space-evenly;
+}
+
+.main-section {
+    width: 40%;
 }
 
 footer {
     text-align: center;
+}
+
+form {
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.form-item {
+    display: flex;
+    justify-content: space-between;
 }
