@@ -1,1 +1,9 @@
-/* file css */
+main {
+    display: flex
+;
+    justify-content: space-evenly;
+}
+
+footer {
+    text-align: center;
+}
