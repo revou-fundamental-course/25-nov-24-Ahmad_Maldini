@@ -1,34 +1,41 @@
+/* File CSS */
+
+/* Struktur Layout Utama */
 main {
-    display: flex
-    ;
-        justify-content: space-evenly;
+    display: flex; /*Halaman Terbagi*/
+    justify-content: space-evenly; /*Layout antar sisi*/
 }
-
+/* Jarak Antara Layout Utama */
 .main-section {
-    width: 40%;
+    width: 40%; /*jarak antar ujung layout*/
 }
 
+/*tulisan bawah*/
 footer {
-    text-align: center;
+    text-align: center; /*rata tengah*/
 }
 
+/*input layout bb-umur-tb*/
 form {
-    background-color: lightgray;
-    padding: 10px;
-    border-radius: 8px;
+    background-color: lightgray; /*background abu muda*/
+    padding: 10px; /*jarak antar tulisan dengan tabel*/
+    border-radius: 8px; /*tingkat runcing ujung tabel*/
 }
 
+/*layout input bb-umur-tb*/
 .form-item {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
+/*layput label input bb-umur-tb*/
 #label-form {
     display: flex;
         align-items: center;
 }
 
+/*model kolom input bb-umur-tb*/
 input[type=number], select {
     width: 100%;
     padding: 12px 20px;
