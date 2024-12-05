@@ -5,6 +5,23 @@ function validatefirstform() {
     let inputBeratBadan = document.getElementById('berat-badan-input').value;
     let inputUsia = document.getElementById('usia-input').value;
     let inputTinggiBadan = document.getElementById('tinggi-badan-input').value;
+
+    // pengecekan gender dipilih
+    let genderInputs = document.getElementsByName('jenis-kelamin');
+    let genderSelected = false;
+
+    for (let i = 0; i < genderInputs.length; i++) {
+        if (genderInputs[i].checked) {
+            genderSelected = true;
+            break;
+        }
+    }
+
+    // Validasi input gender
+    if (!genderSelected) {
+      alert('Tidak bisa diproses, Mohon lengkapi data Anda!');
+      return; // Menghentikan eksekusi jika gender belum dipilih
+  }
   
      // pengaturan kalkulator BMI
      console.log('BB:' + inputBeratBadan);
@@ -19,10 +36,10 @@ function validatefirstform() {
     let bmi = calculate.toFixed(1);
     updateresult(bmi);
     kategoriBMI(bmi);
-  } else {
-    alert('Tidak bisa diproses, Mohon lengkapi data anda!'); // notifikasi bila data tidak lengkap
-  }
-  }
+} else {
+    alert('Tidak bisa diproses, Mohon lengkapi data Anda!'); // Notifikasi bila data tidak lengkap
+}
+}
   
   // tampilan hasil perhitungan
   function updateresult(value) {
