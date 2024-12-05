@@ -15,7 +15,7 @@ function validatefirstform() {
    if (inputBeratBadan !== '' && inputUsia !== '' && inputTinggiBadan !== '') {
     let beratBadan = parseFloat(inputBeratBadan);
     let tinggibadan = parseFloat(inputTinggiBadan);
-    let calculate = beratBadan / (tinggibadan ** 2);
+    let calculate = beratBadan / ((tinggibadan / 100) ** 2);
     let bmi = calculate.toFixed(1);
     updateresult(bmi);
     kategoriBMI(bmi);
