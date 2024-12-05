@@ -13,7 +13,7 @@
         <!-- Section Form Kalkulator BMI -->
         <section class="main-section">
             <!-- Judul Tulisan Website -->
-            <header>
+            <header class="header-section">
                 <h1>Kalkulator BMI</h1>
             </header>
 
@@ -42,7 +42,7 @@
                     <label id="label-form" for="berat-badan-input">
                         <b>Berat Badan (kg)</b>
                     </label>
-                    <input type="number" id="berat-badan-input" placeholder="Berat Badan (kg)"/>
+                    <input type="number" id="berat-badan-input" placeholder="Berat Badan (kg)" required/>
                 </div>
 
                 <!-- Usia -->
@@ -50,21 +50,21 @@
                     <label id="label-form" for="usia-input">
                         <b>Usia (tahun)</b>
                     </label>
-                    <input type="number" id="usia-input" placeholder="Usia (tahun)"/>
+                    <input type="number" id="usia-input" placeholder="Usia (tahun)" required/>
                 </div>
                 
                 <!-- Tinggi Badan -->
                 <div class="form-item">
                     <label id="label-form" for="tinggi-badan-input">
-                        <b>Tinggi Badan (cm)</b>
+                        <b>Tinggi Badan (m)</b>
                     </label>
-                    <input type="number" id="tinggi-badan-input" placeholder="Tinggi Badan (cm)"/>
+                    <input type="number" id="tinggi-badan-input" placeholder="Tinggi Badan (m)" required/>
                 </div>
     
                 <!-- Tombol Eksekusi -->
                 <div>
                     <p>
-                        <button class="buttonmain1">Hitung BMI</button>
+                        <button type="button" class="buttonmain1" onclick="validatefirstform();">Hitung BMI</button>
                         <button class="buttonmain2">Reset</button>
                     </p>
                 </div>
@@ -92,17 +92,17 @@
         <!-- Section Hasil Kalkulasi -->
         <section class="main-section">
             <div>
-                <header>
+                <header class="header-section">
                     <h2 style="margin-bottom: 5px;">Hasil</h2>
                 </header>
 
                 <!-- Notifikasi Hasil -->
                 <form class="second-form">
-                    <p>Berat Badan Lebih</p>
+                    <p>Nilai BMI Anda</p>
 
-                    <div id="result-calculation">0</div>
+                    <div id="result-calculation" style="font-size: 45px;">-</div>
 
-                    <p id="info-result">Anda memiliki berat badan</p>
+                    <p id="info-result">Masukkan data untuk menghitung BMI Anda.</p>
 
                     <button class="buttonmain3">Download Hasil BMI</button>
                 </form>
@@ -146,6 +146,8 @@
     <footer>
         <p>Made by Dono (ahmad maldini)</p>
     </footer>
+
+    <script src="js\script.js"></script>
 </body>
 
 </html>

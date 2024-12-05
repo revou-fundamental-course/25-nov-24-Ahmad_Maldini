@@ -153,3 +153,25 @@ input[type=number], select {
     margin: 4px 2px;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 480px) {
+    main {
+        display: flex
+    ;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    
+    header {
+        display: block;
+        unicode-bidi: isolate;
+    }
+
+    .header-section {
+        text-align: center;
+    }
+
+    .main-section {
+        width: 100%;
+    }
+}
